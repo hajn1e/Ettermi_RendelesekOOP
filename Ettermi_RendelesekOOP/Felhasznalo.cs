@@ -3,7 +3,7 @@ namespace Ettermi_RendelesekOOP;
 internal class Felhasznalo
 {
     public string Nev  { get; set; }
-    public List<Etel> Kosar  { get; private set; }
+    public List<Etel> Kosar  { get; set; }
 
     public Felhasznalo(string nev)
     {
@@ -14,7 +14,7 @@ internal class Felhasznalo
     public void KosarbaTesz(Etel etel)
     {
         Kosar.Add(etel);
-        Console.WriteLine($"{Nev} kosarába {etel} került!");
+        Console.WriteLine($"{Nev} kosarába {etel.Nev} került!");
     }
 
     public void KosarMegtekintes()
